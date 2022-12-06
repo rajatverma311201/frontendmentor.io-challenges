@@ -1,0 +1,127 @@
+$color-primary-marine-blue: hsl(213, 96%, 18%);
+$color-primary-purplish-blue: hsl(243, 100%, 62%);
+$color-primary-pastel-blue: hsl(228, 100%, 84%);
+$color-primary-light-blue: hsl(206, 94%, 87%);
+$color-primary-strawberry-red: hsl(354, 84%, 57%);
+
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+
+$color-neutral-cool-gray: hsl(231, 11%, 63%);
+$color-neutral-light-gray: hsl(229, 24%, 87%);
+$color-neutral-magnolia: hsl(217, 100%, 97%);
+$color-neutral-mlabaster: hsl(231, 100%, 99%);
+$box-shadow-medium: 0 5px 50px rgba($color-black, 0.1);
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+body {
+    background-color: $color-neutral-magnolia;
+}
+
+.main {
+    padding: 20px;
+    padding-left: 50px;
+    height: 90%;
+
+    h1 {
+        color: $color-primary-marine-blue;
+        margin-bottom: 7.5px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: $color-neutral-cool-gray;
+    }
+}
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    background-color: $color-white;
+    width: 75%;
+    height: 550px;
+
+    box-shadow: $box-shadow-medium;
+    padding: 15px;
+}
+.nav {
+    height: 100%;
+    padding: 25px;
+    padding-top: 40px;
+
+    // width: 250px;
+    background-image: url("./../assets/images/bg-sidebar-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    // flex-wrap: wrap;
+
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin-right: 50px;
+    &__element {
+        &:first-child {
+            .nav__number {
+                background-color: $color-primary-light-blue;
+                border-color: $color-primary-light-blue;
+                color: $color-black;
+            }
+        }
+        // &:hover {
+        //     .nav__number {
+        //         background-color: $color-primary-light-blue;
+        //         border-color: $color-primary-light-blue;
+        //         color: $color-black;
+        //     }
+        // }
+        display: flex;
+        color: $color-neutral-magnolia;
+        gap: 10px;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        .nav__number {
+            font-size: 14px;
+            border: 1px solid $color-neutral-light-gray;
+            // border-color: $color-neutral-magnolia;
+            padding: 7.5px 12.5px;
+            border-radius: 50%;
+            font-weight: 700;
+            // color: $color-neutral-light-gray;
+        }
+
+        .nav__content {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            &__step {
+                font-weight: 300;
+                color: $color-neutral-light-gray;
+                margin-bottom: 2.5px;
+                font-size: 12px;
+            }
+            &__text {
+                font-size: 14px;
+                // color: $color-white;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+.form{
+    margin-top: 50px;
+}

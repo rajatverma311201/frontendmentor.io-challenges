@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif; }
+
+body {
+  background-color: #f0f6ff; }
+
+.main {
+  padding: 20px;
+  padding-left: 50px;
+  height: 90%; }
+  .main h1 {
+    color: #02295a;
+    margin-bottom: 7.5px; }
+  .main h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9699ab; }
+
+.container {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  background-color: white;
+  width: 75%;
+  height: 550px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+  padding: 15px; }
+
+.nav {
+  height: 100%;
+  padding: 25px;
+  padding-top: 40px;
+  background-image: url("./../assets/images/bg-sidebar-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 50px; }
+  .nav__element {
+    display: flex;
+    color: #f0f6ff;
+    gap: 10px;
+    align-items: center; }
+    .nav__element:first-child .nav__number {
+      background-color: #bfe2fd;
+      border-color: #bfe2fd;
+      color: black; }
+    .nav__element:not(:last-child) {
+      margin-bottom: 30px; }
+    .nav__element .nav__number {
+      font-size: 14px;
+      border: 1px solid #d6d9e6;
+      padding: 7.5px 12.5px;
+      border-radius: 50%;
+      font-weight: 700; }
+    .nav__element .nav__content {
+      text-transform: uppercase;
+      letter-spacing: 1.5px; }
+      .nav__element .nav__content__step {
+        font-weight: 300;
+        color: #d6d9e6;
+        margin-bottom: 2.5px;
+        font-size: 12px; }
+      .nav__element .nav__content__text {
+        font-size: 14px;
+        font-weight: 700; }
+
+.form {
+  margin-top: 50px; }

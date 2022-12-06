@@ -1,0 +1,15 @@
+{
+    "name": "multi-step-form-main",
+    "version": "1.0.0",
+    "description": "![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)",
+    "main": "index.js",
+    "scripts": {
+        "compile": "node-sass sass/main.scss styles/index.css -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^8.0.0",
+        "nodesass": "^0.0.2-security"
+    }
+}
