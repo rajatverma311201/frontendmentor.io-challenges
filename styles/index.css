@@ -10,8 +10,10 @@ body {
   background-color: #f0f6ff; }
 
 .main {
+  position: relative;
   padding: 20px;
   padding-left: 50px;
+  padding-right: 50px;
   height: 90%; }
   .main h1 {
     color: #02295a;
@@ -24,11 +26,10 @@ body {
 .container {
   border-radius: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: 100px auto;
   background-color: white;
-  width: 75%;
+  width: 900px;
   height: 550px;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
   padding: 15px; }
@@ -74,4 +75,39 @@ body {
         font-weight: 700; }
 
 .form {
-  margin-top: 50px; }
+  margin-top: 30px; }
+  .form div:not(:last-child) {
+    margin-bottom: 25px; }
+  .form div label {
+    color: #02295a;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400; }
+  .form div input {
+    transition: all 0.25s;
+    padding: 12.5px;
+    border: 1.75px solid #d6d9e6;
+    border-radius: 7.5px;
+    width: 100%;
+    color: #02295a;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none; }
+    .form div input[type="text"]:focus {
+      border: 1.75px solid #02295a; }
+    .form div input[type="text"]::placeholder {
+      color: #9699ab; }
+
+.next-step {
+  border: 2px solid #02295a;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #02295a;
+  color: white;
+  padding: 12.5px 17.5px;
+  position: absolute;
+  right: 50px;
+  bottom: -10px;
+  cursor: pointer; }
