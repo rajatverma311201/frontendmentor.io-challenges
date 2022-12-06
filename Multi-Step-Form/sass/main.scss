@@ -31,7 +31,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     height: 90%;
-    // width: 55%;
+    width: 650px;
 
     h1 {
         color: $color-primary-marine-blue;
@@ -42,14 +42,13 @@ body {
         font-size: 16px;
         font-weight: 500;
         color: $color-neutral-cool-gray;
-        // letter-spacing: 1.25px;
+        margin-bottom: 40px;
     }
 }
 
 .container {
     border-radius: 10px;
     display: flex;
-    // justify-content: space-between;
     align-items: center;
     margin: 100px auto;
     background-color: $color-white;
@@ -64,11 +63,9 @@ body {
     padding: 25px;
     padding-top: 40px;
 
-    // width: 250px;
     background-image: url("./../assets/images/bg-sidebar-desktop.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    // flex-wrap: wrap;
 
     flex-basis: 250px;
     flex-grow: 0;
@@ -76,20 +73,14 @@ body {
 
     margin-right: 50px;
     &__element {
-        &:first-child {
+        &-active {
             .nav__number {
                 background-color: $color-primary-light-blue;
                 border-color: $color-primary-light-blue;
                 color: $color-black;
             }
         }
-        // &:hover {
-        //     .nav__number {
-        //         background-color: $color-primary-light-blue;
-        //         border-color: $color-primary-light-blue;
-        //         color: $color-black;
-        //     }
-        // }
+
         display: flex;
         color: $color-neutral-magnolia;
         gap: 10px;
@@ -100,11 +91,9 @@ body {
         .nav__number {
             font-size: 14px;
             border: 1px solid $color-neutral-light-gray;
-            // border-color: $color-neutral-magnolia;
             padding: 7.5px 12.5px;
             border-radius: 50%;
             font-weight: 700;
-            // color: $color-neutral-light-gray;
         }
 
         .nav__content {
@@ -118,7 +107,6 @@ body {
             }
             &__text {
                 font-size: 14px;
-                // color: $color-white;
                 font-weight: 700;
             }
         }
@@ -156,11 +144,11 @@ body {
             }
         }
     }
-
-    margin-top: 30px;
-    // margin-bottom: 20px;
 }
-.next-step {
+
+.next-step,
+.confirm {
+    text-decoration: none;
     border: 2px solid $color-primary-marine-blue;
     border-radius: 10px;
     font-size: 16px;
@@ -173,4 +161,61 @@ body {
     right: 50px;
     bottom: -10px;
     cursor: pointer;
+}
+
+.go-back {
+    text-decoration: none;
+    // border: 2px solid $color-primary-marine-blue;
+    // border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $color-primary-marine-blue;
+    color: $color-white;
+    padding: 12.5px 17.5px;
+
+    position: absolute;
+    // right: 50px;
+    bottom: -10px;
+    cursor: pointer;
+    left: 50px;
+    bottom: -10px;
+    background-color: $color-white;
+    color: $color-primary-marine-blue;
+}
+.plans-container {
+    display: flex;
+    gap: 25px;
+    .plan {
+        transition: all 0.25s;
+        &-active {
+            border: 1.75px solid $color-primary-purplish-blue;
+            background-color: $color-neutral-magnolia;
+        }
+
+        &:hover {
+            cursor: pointer;
+            border: 1.75px solid $color-primary-purplish-blue;
+        }
+        font-weight: 500;
+        width: 125px;
+        height: 150px;
+        padding: 15px;
+        padding-top: 20px;
+        border: 1.75px solid $color-neutral-light-gray;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        &-logo {
+        }
+        &-name {
+            margin-top: 30px;
+            font-size: 16px;
+            color: $color-primary-marine-blue;
+        }
+        &-price {
+            color: $color-neutral-cool-gray;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
 }

@@ -14,14 +14,16 @@ body {
   padding: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  height: 90%; }
+  height: 90%;
+  width: 650px; }
   .main h1 {
     color: #02295a;
     margin-bottom: 7.5px; }
   .main h3 {
     font-size: 16px;
     font-weight: 500;
-    color: #9699ab; }
+    color: #9699ab;
+    margin-bottom: 40px; }
 
 .container {
   border-radius: 10px;
@@ -50,7 +52,7 @@ body {
     color: #f0f6ff;
     gap: 10px;
     align-items: center; }
-    .nav__element:first-child .nav__number {
+    .nav__element-active .nav__number {
       background-color: #bfe2fd;
       border-color: #bfe2fd;
       color: black; }
@@ -74,32 +76,34 @@ body {
         font-size: 14px;
         font-weight: 700; }
 
-.form {
-  margin-top: 30px; }
-  .form div:not(:last-child) {
-    margin-bottom: 25px; }
-  .form div label {
-    color: #02295a;
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: 400; }
-  .form div input {
-    transition: all 0.25s;
-    padding: 12.5px;
-    border: 1.75px solid #d6d9e6;
-    border-radius: 7.5px;
-    width: 100%;
-    color: #02295a;
-    font-weight: 500;
-    font-size: 16px;
-    outline: none; }
-    .form div input[type="text"]:focus {
-      border: 1.75px solid #02295a; }
-    .form div input[type="text"]::placeholder {
-      color: #9699ab; }
+.form div:not(:last-child) {
+  margin-bottom: 25px; }
 
-.next-step {
+.form div label {
+  color: #02295a;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400; }
+
+.form div input {
+  transition: all 0.25s;
+  padding: 12.5px;
+  border: 1.75px solid #d6d9e6;
+  border-radius: 7.5px;
+  width: 100%;
+  color: #02295a;
+  font-weight: 500;
+  font-size: 16px;
+  outline: none; }
+  .form div input[type="text"]:focus {
+    border: 1.75px solid #02295a; }
+  .form div input[type="text"]::placeholder {
+    color: #9699ab; }
+
+.next-step,
+.confirm {
+  text-decoration: none;
   border: 2px solid #02295a;
   border-radius: 10px;
   font-size: 16px;
@@ -111,3 +115,47 @@ body {
   right: 50px;
   bottom: -10px;
   cursor: pointer; }
+
+.go-back {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #02295a;
+  color: white;
+  padding: 12.5px 17.5px;
+  position: absolute;
+  bottom: -10px;
+  cursor: pointer;
+  left: 50px;
+  bottom: -10px;
+  background-color: white;
+  color: #02295a; }
+
+.plans-container {
+  display: flex;
+  gap: 25px; }
+  .plans-container .plan {
+    transition: all 0.25s;
+    font-weight: 500;
+    width: 125px;
+    height: 150px;
+    padding: 15px;
+    padding-top: 20px;
+    border: 1.75px solid #d6d9e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; }
+    .plans-container .plan-active {
+      border: 1.75px solid #473dff;
+      background-color: #f0f6ff; }
+    .plans-container .plan:hover {
+      cursor: pointer;
+      border: 1.75px solid #473dff; }
+    .plans-container .plan-name {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #02295a; }
+    .plans-container .plan-price {
+      color: #9699ab;
+      font-size: 14px;
+      margin-top: 5px; }

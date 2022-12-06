@@ -20,14 +20,11 @@
         />
         <link rel="stylesheet" href="styles/index.css" />
         <title>Frontend Mentor | Multi-step form</title>
-
-
     </head>
     <body class="body-container">
         <div class="container">
-            <!-- Sidebar start -->
             <nav class="nav">
-                <div class="nav__element nav__element-active">
+                <div class="nav__element">
                     <div class="nav__number">1</div>
                     <div class="nav__content">
                         <div class="nav__content__step">Step 1</div>
@@ -35,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="nav__element">
+                <div class="nav__element nav__element-active">
                     <div class="nav__number">2</div>
                     <div class="nav__content">
                         <div class="nav__content__step">Step 2</div>
@@ -59,34 +56,40 @@
                     </div>
                 </div>
             </nav>
-            <!-- Sidebar end -->
 
             <main class="main">
-                <!-- Step 1 start -->
-                <h1>Personal info</h1>
-                <h3>
-                    Please provide your name, email address, and phone number.
-                </h3>
+                <h1>Select your plan</h1>
+                <h3>You have the option of monthly or yearly billing</h3>
 
-                <form class="form" action="">
-                    <div>
-                        <label for=""> Name </label>
-                        <input type="text" placeholder="e.g. Stephen King" />
+                <div class="plans-container">
+                    <div class="plan plan-active">
+                        <div class="plan-logo">
+                            <img src="./assets/images/icon-arcade.svg" alt="" />
+                        </div>
+                        <div class="plan-name">Arcade</div>
+                        <div class="plan-price">$9/mo</div>
                     </div>
-                    <div>
-                        <label for=""> Email Address </label>
-                        <input
-                            type="text"
-                            placeholder="e.g. stephenking@lorem.com"
-                        />
+                    <div class="plan">
+                        <div class="plan-logo">
+                            <img
+                                src="./assets/images/icon-advanced.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="plan-name">Advanced</div>
+                        <div class="plan-price">$12/mo</div>
                     </div>
-                    <div>
-                        <label for=""> Phone Number</label>
-                        <input type="text" placeholder="e.g. +1 234 567 890" />
+                    <div class="plan">
+                        <div class="plan-logo">
+                            <img src="./assets/images/icon-pro.svg" alt="" />
+                        </div>
+                        <div class="plan-name">Pro</div>
+                        <div class="plan-price">$15/mo</div>
                     </div>
-                </form>
+                </div>
 
-                <a href="/step2.html" class="next-step">Next Step</a>
+                <a href="/" class="go-back">Go Back</a>
+                <a href="/step3.html" class="next-step">Next Step</a>
             </main>
         </div>
     </body>
